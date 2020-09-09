@@ -1,0 +1,106 @@
+$brand-primary: (
+            50: #e1f5f8,
+            100: #b3e5ee,
+            200: #83d3e4,
+            300: #58c2db,
+            400: #37b5d7,
+            500: #12a9d3,
+            600: #009bc6,
+            700: #0089b4,
+            800: #0078a1,
+            A200: #005881,
+            A400: #005881,
+            A700: #005881,
+            contrast: (
+                    500: white,
+                    600: white,
+                    700: white,
+                    800: white,
+                    900: white,
+                    A700: white,
+            )
+    );
+
+    $brand-accent: (
+        50: #fce9e7,
+        100: #ffcbba,
+        200: #ffa98e,
+        300: #ff8761,
+        400: #ff6b3e,
+        500: #ff4f1a,
+        600: #fa4916,
+        700: #ec4210,
+        800: #de3a0b,
+        A200: #c62b00,
+        A400: #c62b00,
+        A700: #c62b00,
+        contrast: (
+                500: white,
+                600: white,
+                700: white,
+                800: white,
+                900: white,
+                A700: white,
+        )
+);
+
+$brand-warn: (
+        50: #ffebee,
+        100: #ffcdd2,
+        200: #ef9a9a,
+        300: #e57373,
+        400: #ef5250,
+        500: #f44236,
+        600: #e53835,
+        700: #d32e2f,
+        800: #c62728,
+        A200: #b71a1c,
+        A400: #b71a1c,
+        A700: #b71a1c,
+        contrast: (
+                500: white,
+                600: white,
+                700: white,
+                800: white,
+                900: white,
+                A700: white,
+        )
+);
+
+$brand-success: (
+        50: #e3f7ef,
+        100: #bcebd6,
+        200: #8eddbd,
+        300: #56d1a2,
+        400: #00c68e,
+        500: #00bb79,
+        600: #00ac6e,
+        700: #009960,
+        800: #008753,
+        A200: #00673c,
+        A400: #00673c,
+        A700: #00673c,
+        contrast: (
+                500: white,
+                600: white,
+                700: white,
+                800: white,
+                900: white,
+                A700: white,
+        )
+);
+
+
+// define 3 theme color
+// mat-palette accepts $palette-name, main, lighter and darker variants
+$my-theme-primary: mat-palette($brand-primary, 700, 300, 900);
+$my-theme-accent: mat-palette($brand-accent);
+$my-theme-warn: mat-palette($brand-warn, A200);
+$my-theme-success: mat-palette($brand-success);
+
+// create theme (use mat-dark-theme for themes with dark backgrounds)
+$my-theme: mat-light-theme(
+    $my-theme-primary,
+    $my-theme-accent,
+    $my-theme-warn
+);
