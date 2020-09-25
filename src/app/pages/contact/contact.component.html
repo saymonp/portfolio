@@ -1,0 +1,57 @@
+<div class="main-div image">
+    
+  <!-- <table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-icon color="accent">mail</mat-icon>
+      <mat-label>sas@sas.com</mat-label> 
+    </td>
+    <td><mat-icon color="accent">phonelink_ring</mat-icon>
+      <mat-label>11 99431 4529</mat-label> </td>
+      <td><mat-icon color="accent">location_on</mat-icon>
+        <mat-label>Avenida Modelo 123/2 </mat-label> </td>
+  </tr></table>  -->
+<mat-grid-list cols="2">
+  <mat-icon color="accent" colspan="1">mail</mat-icon> 
+    <mat-label>sas@sas.com</mat-label> 
+
+  <mat-icon color="accent">phonelink_ring</mat-icon>
+    <mat-label>11 99431 4529</mat-label>
+
+    <mat-icon color="accent">location_on</mat-icon>
+      <mat-label>Avenida Modelo 123/2 </mat-label> 
+</mat-grid-list>
+ 
+    <mat-card style="text-align: center;">   
+          <mat-card-title style="margin-bottom:35px;">Entre em contato</mat-card-title>
+        <mat-card-content>
+            <form class="example-form">      
+                <table class="example-full-width" cellspacing="0"><tr>
+                  <td><mat-form-field color="accent" class="example-full-width">
+                    <mat-label>Primeiro nome</mat-label>
+                    <input matInput>
+                  </mat-form-field></td>
+                  <td><mat-form-field color="accent" class="example-full-width">
+                    <mat-label>Sobrenome</mat-label>
+                    <input matInput>
+                  </mat-form-field></td>
+                </tr></table>
+
+                <p>
+                    <mat-form-field color="accent" class="example-full-width">
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="Ex. pat@example.com">
+                  </mat-form-field>
+                </p>
+              
+                <table class="example-full-width" cellspacing="0"><tr>
+                  <td><mat-form-field color="accent" class="example-full-width">
+                    <mat-label>Mensagem</mat-label>
+                    <textarea class="fixed_width" matInput rows="5"></textarea>
+                  </mat-form-field></td>
+                </tr></table>
+              </form>
+        </mat-card-content>
+        <mat-card-actions>
+          <button color="accent" mat-raised-button><mat-icon style="margin-right:9px;" color="primary">send</mat-icon>ENVIAR</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
